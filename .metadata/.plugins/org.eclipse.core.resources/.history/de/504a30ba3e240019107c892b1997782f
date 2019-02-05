@@ -1,0 +1,61 @@
+package aula3;
+
+public class Endereco {
+
+		
+		private String logadrouro;
+		private int numero;
+		private String bairro;
+		private String cidade;
+		private int uf;
+		private String complemento;
+		
+		Endereco(){			
+		}
+		
+		Endereco(String logadrouro, int numero, String bairro, String cidade, int uf, String complemento){
+			this.numero = numero;
+			this.logadrouro = logadrouro;
+			this.bairro = bairro;
+			this.cidade = cidade;
+			this.uf = uf;
+			this.complemento = complemento;
+		}
+
+		public String getlogadrouro(String logadrouro) {
+			return logadrouro;
+		}
+		public void setlogadrouro() {
+		}
+		
+		public int getnumero(int numero) {
+			return numero;
+		}
+		public void setnumero() {
+		}
+		
+		public String getbairro(String bairro) {
+			return bairro;
+		}
+		public void setbairro() {
+		}
+		
+		public String getcidade(String cidade) {
+			return cidade;
+		}
+		public void setcidade() {
+		}
+		
+		public int getuf(int uf) {
+			return uf;
+		}
+		public void setuf() {
+		}
+		
+		public String getcomplemento(String complemento) {
+			return complemento;
+		}
+		public void setcomplemento() {
+		}
+		
+}

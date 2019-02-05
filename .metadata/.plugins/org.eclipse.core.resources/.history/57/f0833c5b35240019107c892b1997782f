@@ -1,0 +1,15 @@
+
+public class Pessoa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		public String nome;
+		public int cpf;
+		public int identidade;
+		public String sexo;
+		public int idade;
+		
+	}
+
+}

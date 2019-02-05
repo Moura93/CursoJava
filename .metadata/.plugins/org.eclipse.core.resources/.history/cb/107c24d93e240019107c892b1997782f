@@ -1,0 +1,46 @@
+package aula3;
+public class Conta {
+
+
+		private int numero;
+		private int saldo;
+		private int limite;
+		private String tipo;
+		
+		Conta(){			
+		}
+		
+		Conta(int numero, int saldo, int limite, String tipo){
+			this.numero = numero;
+			this.saldo = saldo;
+			this.limite = limite;
+			this.tipo = tipo;
+		}
+		
+		public int getnumero(int numero) {
+			return numero;
+		}
+		public void setnumero() {
+		}
+		
+		public int getsaldo(int saldo) {
+			return saldo;
+		}
+		public void setsaldo() {
+		}
+
+		public int getlimite(int limite) {
+			return limite;
+		}
+		public void setlimite() {
+		}
+		
+		public String gettipo(String tipo) {
+			return tipo;
+		}
+		public void settipo() {
+		}
+
+
+
+}

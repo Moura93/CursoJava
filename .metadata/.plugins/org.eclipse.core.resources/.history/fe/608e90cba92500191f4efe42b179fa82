@@ -1,0 +1,22 @@
+
+public class ContaFisica {
+	
+	private int cpf;
+	
+
+	ContaFisica(){
+		
+	}
+	
+	ContaFisica(int cpf){
+		this.cpf = cpf;
+	}
+	
+	public int getcpf() {
+		return cpf;
+	}
+
+	public void setcpf(int cpf) {
+		this.cpf = cpf;
+	}
+}

@@ -1,0 +1,16 @@
+
+public class Endereço {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		public String logadrouro;
+		public int numero;
+		public String bairro;
+		public String cidade;
+		public int uf;
+		public String complemento;
+		
+	}
+
+}

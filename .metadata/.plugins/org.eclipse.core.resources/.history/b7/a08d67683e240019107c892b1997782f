@@ -1,0 +1,68 @@
+package aula3;
+
+public class Pessoa {
+
+	private String nome;
+	private int cpf;
+	private int identidade;
+	private String sexo;
+	private int idade;
+	private Endereco endereco;
+
+	Pessoa() {
+	}
+
+	Pessoa(String nome, int cpf, int identidade, String sexo, int idade, Endereco endereco) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.identidade = identidade;
+		this.sexo = sexo;
+		this.idade = idade;
+		this.endereco = endereco;
+	}
+
+	public String getnome(String nome) {
+		return nome;
+	}
+
+	public void setnome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getcpf(int cpf) {
+		return cpf;
+	}
+
+	public void setcpf() {
+	}
+
+	public int getidentidade(int identidade) {
+		return identidade;
+	}
+
+	public void setidentidade() {
+	}
+
+	public String getsexo(String sexo) {
+		return sexo;
+	}
+
+	public void setsexo() {
+	}
+
+	public int getidade(int idade) {
+		return idade;
+	}
+
+	public void setidade() {
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+}

@@ -1,0 +1,24 @@
+
+public class Endereço {
+
+		
+		public String logadrouro;
+		public int numero;
+		public String bairro;
+		public String cidade;
+		public int uf;
+		public String complemento;
+		
+		Endereço(){			
+		}
+		
+		Endereço(String logadrouro, int numero, String bairro, String cidade, int uf, String complemento){
+			this.numero = numero;
+			this.logadrouro = logadrouro;
+			this.bairro = bairro;
+			this.cidade = cidade;
+			this.uf = uf;
+			this.complemento = complemento;
+		}
+
+}

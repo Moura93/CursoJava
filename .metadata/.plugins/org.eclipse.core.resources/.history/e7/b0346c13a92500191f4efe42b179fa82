@@ -1,0 +1,13 @@
+
+import java.util.Scanner;
+public class Aula4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ContaFisica ent = new ContaFisica(15265845715);
+		System.out.println(ent.getcpf());
+		
+	}
+
+}

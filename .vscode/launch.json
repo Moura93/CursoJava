@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SingUp",
+            "request": "launch",
+            "mainClass": "gui.SingUp",
+            "projectName": "Pfc",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Interface",
+            "request": "launch",
+            "mainClass": "gui.Interface",
+            "projectName": "Pfc",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Aula4",
+            "request": "launch",
+            "mainClass": "Aula4",
+            "projectName": "Aula4"
+        },
+        {
+            "name": "Python: Terminal (integrated)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Aula1",
+            "request": "launch",
+            "mainClass": "Aula1",
+            "projectName": "Aula1",
+            "console": "integratedTerminal"
+        }
+    ]
+}

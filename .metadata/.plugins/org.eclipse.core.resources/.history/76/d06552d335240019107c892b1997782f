@@ -1,0 +1,13 @@
+
+public class Endereço {
+
+		
+		public String logadrouro;
+		public int numero;
+		public String bairro;
+		public String cidade;
+		public int uf;
+		public String complemento;
+		
+
+}
