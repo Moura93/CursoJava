@@ -1,13 +1,13 @@
 
-public class ContaJuridica {
+public class ContaJuridica extends Conta{
 	
 	private int cnpj;
-	
+
 
 	ContaJuridica(){
 		
 	}
-	
+
 	ContaJuridica(int cnpj){
 		this.cnpj = cnpj;
 	}
