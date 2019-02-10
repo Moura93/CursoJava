@@ -2,18 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ContaJuridica" key="selection"/>
+		<item value="Pessoa" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="pacisoa"/>
+			<item value="pes"/>
+			<item value="saldo"/>
+			<item value="numero"/>
 			<item value="ContaFisica"/>
 			<item value="cpf"/>
 			<item value="tipo"/>
 			<item value="limite"/>
-			<item value="saldo"/>
-			<item value="numero"/>
 			<item value="Complemento"/>
 			<item value="Uf"/>
 			<item value="cidade"/>
@@ -21,10 +23,12 @@
 			<item value="Logadrouro"/>
 			<item value="idade"/>
 			<item value="identidade"/>
-			<item value="Cpf"/>
-			<item value="nome"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Pessoa"/>
+			<item value="paci"/>
+			<item value="matricula"/>
+			<item value="pis"/>
 			<item value="ContaJuridica"/>
 			<item value="cnpj"/>
 			<item value="tipo"/>
@@ -36,10 +40,6 @@
 			<item value="cidade"/>
 			<item value="bairro"/>
 			<item value="logadrouro"/>
-			<item value="idade"/>
-			<item value="identidade"/>
-			<item value="cpf"/>
-			<item value="nome"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

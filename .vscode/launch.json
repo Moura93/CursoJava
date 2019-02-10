@@ -2,6 +2,22 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ProgramaHospital",
+            "request": "launch",
+            "mainClass": "projeto.ProgramaHospital",
+            "projectName": "ProjetoAula6",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Pessoas",
+            "request": "launch",
+            "mainClass": "projeto.ProgramaHospital",
+            "projectName": "ProjetoAula6",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SingUp",
             "request": "launch",
             "mainClass": "gui.SingUp",

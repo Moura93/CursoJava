@@ -1,3 +1,4 @@
+package projeto;
 
 public abstract class Conta {
 
@@ -16,13 +17,15 @@ public abstract class Conta {
 		this.tipo = tipo;
 	}
 	
+//	public abstract int soma();
+
 	public int getnumero() {
 		return numero;
 	}
 	public void setnumero(int numero) {
 		this.numero = numero;
 	}
-	
+
 	public double getsaldo() {
 		return saldo;
 	}
