@@ -1,8 +1,8 @@
 package projeto;
 
 /*
- * DOENÇA
- * MÉDICO
+ * DOENÃ‡A
+ * MÃ‰DICO
  * ENFERMEIRO
  */
 public class Pacientes extends Pessoas {

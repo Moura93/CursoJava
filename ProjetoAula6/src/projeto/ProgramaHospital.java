@@ -1,6 +1,8 @@
 package projeto;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProgramaHospital {
 
@@ -11,6 +13,7 @@ public class ProgramaHospital {
 		boolean sair = true;
 
 		// VARIAVEIS PESSOA
+		List<Pacientes> pacientess = new ArrayList<Pacientes>();
 		String nome = null;
 		long cpf = 0;
 		int idade = 0;
@@ -34,6 +37,16 @@ public class ProgramaHospital {
 		Medicos med = new Medicos(nome, cpf, idade, sexo, pis, matricula, crm, especialidade);
 		Enfermeiro enf = new Enfermeiro(nome, cpf, idade, sexo, pis, matricula, setor, cre);
 
+
+		// pacientess.add(paci);
+
+		// for (Pacientes p : pacientess) {
+		// 	if(p.getNome().equalsIgnoreCase("jo�o")) {
+		// 		System.out.println(p.getCpf());
+		// 	}
+		// }
+
+
 		// PROGRAMA
 		while (sair) {
 			System.out.println("\nMENU:\n[1] - Cadastro\n[2] - Vizualizacao\n[3] - Apagar\n[4] - Sair");
@@ -42,7 +55,8 @@ public class ProgramaHospital {
 			switch (menu) {
 			case 1: // CADASTRO
 				System.out.println("Digite o nome da pessoa: ");
-				paci.setNome(var.nextLine());
+		
+				nome = var.nextLine();
 				System.out.println("Digite o CPF da pessoa: ");
 				paci.setCpf(var.nextLong());
 				System.out.println("Digite a idade da pessoa: ");
@@ -51,6 +65,7 @@ public class ProgramaHospital {
 				paci.setSexo(var.next().charAt(0));
 				System.out.println("\nTIPO:\n[1] - Paciente\n[2] - Medico\n[3] - Enfermeiro\n[4] - Sair");
 				tipoDePessoa = var.nextInt();
+
 				switch (tipoDePessoa) {
 				case 1: // PACIENTE
 					System.out.println("Qual doença o paciente apresenta? ");
@@ -59,12 +74,14 @@ public class ProgramaHospital {
 					paci.setMedico(var.next());
 					System.out.println("Qual enfermeiro esta atendendo-o? ");
 					paci.setEnfermeiro(var.next());
+					pacientess.add(paci);
 					break;
 				case 2: // MÉDICOS
 					System.out.println("Qual CRM do medico? ");
-					med.setCrm(var.nextInt());
+					med.setCrm(var.nextLong());
 					System.out.println("Qual a especialidade do medico? ");
 					med.setEspecialidade(var.next());
+					pacientess.add(med);
 					break;
 				case 3: // ENFERMEIRO
 					System.out.println("Qual CRE do enfermeiro? ");
@@ -77,12 +94,22 @@ public class ProgramaHospital {
 				}
 				break;
 			case 2: // VIZUALIZAÇÃO
+				System.out.println("Quem você quer procurar?\n[1] - Paciente\n[2] - Medico\n[3] - Enfermeiro\n[4] - Sair");
+				tipoDePessoa = var.nextInt();
+				System.out.println("Digite o nome: ");
+				String comp = var.nextLine();
 				System.out.println("\nDADOS PESSOAIS:");
-				System.out.println("Nome: " + paci.getNome());
-				System.out.println("CPF: " + paci.getCpf());
-				System.out.println("Idade: " + paci.getIdade());
-				System.out.println("Sexo: " + paci.getSexo());
-
+				for (Pacientes p : pacientess) {
+					if(p.getNome().equalsIgnoreCase(comp)) {
+						System.out.println("Nome: " + p.getNome());
+						System.out.println("CPF: " + p.getCpf());
+						System.out.println("Idade: " + p.getIdade());
+						System.out.println("Sexo: " + p.getSexo());
+					}
+					else{
+						System.out.println("!NOME NÃO ENCONTRADO!");
+					}
+				}
 				switch (tipoDePessoa) {
 				case 1: // VISUALIZAR DADOS DO PACIENTE
 					System.out.println("\nDADOS DO PACIENTE:");
@@ -103,9 +130,7 @@ public class ProgramaHospital {
 				default:
 					System.out.println("\n!TIPO DE Pessoa NAO CADASTRADA!");
 					break;
-
 				}
-				break;
 			case 3: // APAGAR
 				break;
 			case 4: // SAIR
