@@ -4,7 +4,7 @@ package projeto;
  * CRM
  * ESPECIALIDADE
  */
-public class Medicos extends Empregados {
+public class Medico extends Empregado {
 
 	public long crm;
 	public String especialidade;
@@ -17,11 +17,11 @@ public class Medicos extends Empregados {
 		this.crm = crm;
 	}
 
-	Medicos() {
+	Medico() {
 
 	}
 
-	public Medicos(String nome, long cpf, int idade, char sexo, long pis, int matricula, long crm,
+	public Medico(String nome, long cpf, int idade, char sexo, long pis, int matricula, long crm,
 			String especialidade) {
 		super(nome, cpf, idade, sexo, pis, matricula);
 		this.crm = crm;

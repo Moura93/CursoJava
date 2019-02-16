@@ -5,16 +5,16 @@ package projeto;
  * MATRICULA
  * CONTA()	<- PERGUNTAR AO PROFESSOR COMO IMPLEMENTAR A CLASSE CONTA EM EMPREGADOS
  */
-public class Empregados extends Pessoas {
+public class Empregado extends Pessoa {
 
 	public long pis;
 	public int matricula;
 
-	Empregados() {
+	Empregado() {
 
 	}
 
-	public Empregados(String nome, long cpf, int idade, char sexo, long pis, int matricula) {
+	public Empregado(String nome, long cpf, int idade, char sexo, long pis, int matricula) {
 		super(nome, cpf, idade, sexo);
 		this.matricula = matricula;
 		this.pis = pis;

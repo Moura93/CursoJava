@@ -6,7 +6,7 @@ package projeto;
  * IDADE
  * SEXO
  */
-public class Pessoas {
+public class Pessoa {
 	private String nome;
 	private long cpf;
 	private int idade;
@@ -44,11 +44,11 @@ public class Pessoas {
 		this.sexo = sexo;
 	}
 
-	Pessoas() {
+	Pessoa() {
 
 	}
 
-	public Pessoas(String nome, long cpf, int idade, char sexo) {
+	public Pessoa(String nome, long cpf, int idade, char sexo) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.idade = idade;

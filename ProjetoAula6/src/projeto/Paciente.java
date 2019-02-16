@@ -5,7 +5,7 @@ package projeto;
  * MÉDICO
  * ENFERMEIRO
  */
-public class Pacientes extends Pessoas {
+public class Paciente extends Pessoa {
 	String doenca;
 	String medico;
 	String enfermeiro;
@@ -34,11 +34,11 @@ public class Pacientes extends Pessoas {
 		this.enfermeiro = enfermeiro;
 	}
 
-	Pacientes() {
+	Paciente() {
 
 	}
 
-	public Pacientes(String nome, long cpf, int idade, char sexo, String doenca, String medico, String enfermeiro) {
+	public Paciente(String nome, long cpf, int idade, char sexo, String doenca, String medico, String enfermeiro) {
 		super(nome, cpf, idade, sexo);
 		this.doenca = doenca;
 		this.medico = medico;

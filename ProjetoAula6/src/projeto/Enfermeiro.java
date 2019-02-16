@@ -4,7 +4,7 @@ package projeto;
  * SETOR
  * CRE
  */
-public class Enfermeiro extends Empregados {
+public class Enfermeiro extends Empregado {
 
 	public String setor;
 	public long cre;
